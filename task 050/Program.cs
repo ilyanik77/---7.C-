@@ -37,10 +37,11 @@ void Elem (int [,] arr, int row, int column)
     Console.Write(arr[x, y]); 
 }
 
-int [,] matrix = CreateArray(2, 4);
+int [,] matrix = CreateArray(n, m);
 PrintArray(matrix);
 Console.WriteLine();
-Elem(matrix, 3, 6);
+Elem(matrix, row, column);
+
 
 
 
