@@ -40,7 +40,7 @@ void Elem (int [,] arr, int row, int column)
 int [,] matrix = CreateArray(2, 4);
 PrintArray(matrix);
 Console.WriteLine();
-Elem(matrix, 2, 2);
+Elem(matrix, 3, 6);
 
 
 
