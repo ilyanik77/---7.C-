@@ -27,24 +27,20 @@ void PrintArray (int [,] arr)
     
 }
 
-void Elem (int [,] arr, int x, int y)
+void Elem (int [,] arr, int row, int column)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            if (x > arr.GetLength(0) || y > arr.GetLength(1))
-            Console.WriteLine("Такого элемента не существует");
-            
-        }
-    }
+    int x = row - 1;
+    int y = column - 1;
+    if (x > arr.GetLength(0) || y > arr.GetLength(1))
+    Console.WriteLine("Такого элемента не существует");
+    else        
     Console.Write(arr[x, y]); 
 }
 
 int [,] matrix = CreateArray(2, 4);
 PrintArray(matrix);
 Console.WriteLine();
-Elem(matrix, 1, 2);
+Elem(matrix, 2, 2);
 
 
 
